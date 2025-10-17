@@ -1,0 +1,16 @@
+{
+  "jupyterlite_contents": "content",
+  "jupyterlite_settings": {
+    "jupyterlab-application": {
+      "default_workspace": "notebook"
+    },
+    "jupyterlab-application-extension": {
+      "jupyterlab-application": {
+        "default_workspace": "notebook"
+      }
+    }
+  },
+  "jupyterlite_config": {
+    "jupyterlite_contents": "content"
+  }
+}

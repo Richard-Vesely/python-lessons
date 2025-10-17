@@ -25,15 +25,19 @@ jobs:
         with:
           python-version: '3.9'
       
-      - name: Install JupyterLite
+      - name: Install JupyterLite with kernels
         run: |
           pip install jupyterlite[all]
+          pip install jupyterlite-pyodide-kernel
+          pip install jupyterlite-xeus-python
+          pip install pyodide
       
       - name: Build JupyterLite
         run: |
-          jupyter lite build --contents content
+          jupyter lite build --contents content --pyodide --output-dir _output
           ls -la
           ls -la _output
+          ls -la _output/jupyterlite
       
       - name: Setup Pages
         uses: actions/configure-pages@v4
