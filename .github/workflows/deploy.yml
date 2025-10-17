@@ -27,11 +27,13 @@ jobs:
       
       - name: Install JupyterLite
         run: |
-          pip install jupyterlite
+          pip install jupyterlite[all]
       
       - name: Build JupyterLite
         run: |
           jupyter lite build --contents content
+          ls -la
+          ls -la _output
       
       - name: Setup Pages
         uses: actions/configure-pages@v4
