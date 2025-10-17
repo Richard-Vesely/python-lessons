@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Lessons - JupyterLite</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .notebook-list {
+            list-style: none;
+            padding: 0;
+        }
+        .notebook-item {
+            background: #f8f9fa;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 4px solid #007bff;
+        }
+        .notebook-item a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+        .notebook-item a:hover {
+            color: #0056b3;
+        }
+        .description {
+            color: #6c757d;
+            margin-top: 5px;
+            font-size: 14px;
+        }
+        .launch-btn {
+            display: block;
+            background: #28a745;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+        .launch-btn:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🐍 Python Lessons</h1>
+        
+        <p>Vítejte v interaktivních Python lekcích! Vyberte si lekci nebo spusťte JupyterLite pro plnou funkcionalnost.</p>
+        
+        <a href="jupyterlite/" class="launch-btn">🚀 Spustit JupyterLite</a>
+        
+        <h2>📚 Dostupné lekce:</h2>
+        <ul class="notebook-list">
+            <li class="notebook-item">
+                <a href="jupyterlite/lab?path=content/00-index.ipynb">00 - Domovská stránka</a>
+                <div class="description">Hlavní stránka s přehledem všech dostupných lekcí</div>
+            </li>
+            <li class="notebook-item">
+                <a href="jupyterlite/lab?path=content/Python1.ipynb">Python 1 - Základy programování</a>
+                <div class="description">Úvodní lekce pokrývající základy příkazu print(), práci s čísly a textem</div>
+            </li>
+            <li class="notebook-item">
+                <a href="jupyterlite/lab?path=content/example.ipynb">Příklad</a>
+                <div class="description">Ukázkový notebook s jednoduchými příklady</div>
+            </li>
+        </ul>
+        
+        <h2>💡 Jak používat:</h2>
+        <ol>
+            <li>Klikněte na "Spustit JupyterLite" pro plnou funkcionalnost</li>
+            <li>Nebo klikněte na konkrétní lekci pro přímé otevření</li>
+            <li>Spusťte buňky pomocí <strong>Shift+Enter</strong></li>
+            <li>Experimentujte s kódem a učte se!</li>
+        </ol>
+    </div>
+</body>
+</html>
