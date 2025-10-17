@@ -2,7 +2,6 @@ name: Deploy JupyterLite site
 on:
   push:
     branches: [ main ]
-  workflow_dispatch:
 
 permissions:
   contents: read
@@ -25,19 +24,15 @@ jobs:
         with:
           python-version: '3.9'
       
-      - name: Install JupyterLite with kernels
+      - name: Install dependencies
         run: |
-          pip install jupyterlite[all]
-          pip install jupyterlite-pyodide-kernel
-          pip install jupyterlite-xeus-python
-          pip install pyodide
+          pip install -r requirements.txt
       
       - name: Build JupyterLite
         run: |
-          jupyter lite build --contents content --pyodide --output-dir _output
+          jupyter lite build --contents content
           ls -la
           ls -la _output
-          ls -la _output/jupyterlite
       
       - name: Setup Pages
         uses: actions/configure-pages@v4

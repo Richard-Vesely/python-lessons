@@ -1,8 +1,3 @@
 {
-  "jupyterlite_contents": "content",
-  "jupyterlite_settings": {
-    "jupyterlab-application": {
-      "default_workspace": "notebook"
-    }
-  }
+  "jupyterlite_contents": "content"
 }
