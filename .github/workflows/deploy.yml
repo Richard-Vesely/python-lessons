@@ -1,0 +1,12 @@
+name: Deploy JupyterLite site
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: jupyterlite/actions/build@v1
+      - uses: jupyterlite/actions/deploy@v1
